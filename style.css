@@ -1,0 +1,23 @@
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    }
+
+#header{
+    background: url("header.jpg.jpg") no-repeat;
+    height: 540px;
+    width: 1892px;
+    display: flex;
+    text-align: center;
+}
+
+#header > h1{
+    display: table-cell;
+    margin: auto;/* to make text in the center of the container*/
+    font-family: "Arial";
+    font-size: 900%;
+    color: darkslategrey;
+    border-style: groove;
+    background-color: whitesmoke;
+}
