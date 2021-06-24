@@ -1,23 +1,81 @@
-.container{
+body, html{
+    width: 100%;  /*source data pour toute la page*/
+    height: 100%;
+}
+
+.container_main{
     position: relative;
     height: 100%;
     width: 100%;
     }
 
+#cont_header{
+    height:100%; /*taille px - il ne faut pas*/
+    width: 100%;
+}
+
 #header{
-    background: url("header.jpg.jpg") no-repeat;
-    height: 540px;
-    width: 1892px;
+    background: url("header.jpg.jpg") no-repeat center;
+    height: 25%;
+    width: 100%;
     display: flex;
     text-align: center;
+    margin: auto;
+    background: cover;
+    background-size: cover;
 }
 
 #header > h1{
-    display: table-cell;
-    margin: auto;/* to make text in the center of the container*/
+    margin: auto;     /* to make text in the center of the container*/
     font-family: "Arial";
-    font-size: 900%;
+    font-size: 3em;
     color: darkslategrey;
     border-style: groove;
     background-color: whitesmoke;
+}
+
+/* SECTION MENU */
+
+.cont-menu{
+    display: flex;
+    width: 100%;
+    margin-top: 1%;
+}
+
+#el1, #el2, #el3, #el4{
+    min-width: 20%;
+    max-height: 10%;
+    border: groove darkslategrey;
+    background: linear-gradient(#e66465, #9198e5);
+    font-size: 1em;
+    text-align: center;
+}
+
+#search{
+    background: lightgrey;
+    font-size: 1em;
+    max-height: 10%;
+}
+/* SECTION MAIN : CONTAINS 4 ELEMENTS */
+.cont_page{
+    display: flex;
+}
+
+#intr{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 60%;
+    max-height: 5%;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sous_cont_page
+
+.cont_page > .par1, .par2, .par3{
+    flex: auto;
+    min-width: 40%;
+    min-height: 50%;
 }
